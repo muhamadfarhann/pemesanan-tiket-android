@@ -1,3 +1,1 @@
-# pemesanan-tiket-android
-
-Aplikasi Android Pemesanan Tiket
+# Aplikasi Android Pemesanan Tiket
