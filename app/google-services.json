@@ -52,6 +52,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "997608981425-1n7bj47cpqo35gl5pkhoeeu8kqdbn1oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "firstbelajar.digitalsoftware.pemesanantiket",
+            "certificate_hash": "73f9b4e9d2e066fb6dcdb7b4a1dc6aaca5c458ab"
+          }
+        },
+        {
+          "client_id": "997608981425-9fclnrba47hg2nm9sri8eirbresof0ej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "firstbelajar.digitalsoftware.pemesanantiket",
+            "certificate_hash": "0a5eda981bf50c4caf2d7cd25a6287bdc20338a4"
+          }
+        },
+        {
           "client_id": "997608981425-ihit0s0beourmfecoak958vg2v8t0rfr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

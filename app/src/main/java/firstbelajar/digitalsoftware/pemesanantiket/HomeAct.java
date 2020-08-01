@@ -45,6 +45,7 @@ public class HomeAct extends AppCompatActivity {
         btn_candi = findViewById(R.id.btn_candi);
         btn_sphinx = findViewById(R.id.btn_sphinx);
         btn_monas = findViewById(R.id.btn_monas);
+        btn_to_profile = findViewById(R.id.btn_to_profile);
         photo_home_user = findViewById(R.id.photo_home_user);
         user_balance = findViewById(R.id.user_balance);
         nama_lengkap = findViewById(R.id.nama_lengkap);
@@ -56,7 +57,7 @@ public class HomeAct extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 nama_lengkap.setText(dataSnapshot.child("nama_lengkap").getValue().toString());
                 bio.setText(dataSnapshot.child("bio").getValue().toString());
-                user_balance.setText("US$ " + dataSnapshot.child("user_balance").getValue().toString());
+                user_balance.setText("Rp.  " + dataSnapshot.child("user_balance").getValue().toString());
 
                 // Menggunakan library picasso untuk mengupload foto menuju halaman home
                 Picasso.with(HomeAct.this)
@@ -73,11 +74,27 @@ public class HomeAct extends AppCompatActivity {
             }
         });
 
+        btn_to_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotoprofile = new Intent(HomeAct.this, ProfileAct.class);
+                startActivity(gotoprofile);
+            }
+        });
+
+        photo_home_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotoprofile = new Intent(HomeAct.this, ProfileAct.class);
+                startActivity(gotoprofile);
+            }
+        });
+
         btn_pisa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Pisa");
                 startActivity(gotopisa);
             }
         });
@@ -86,7 +103,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Torri");
                 startActivity(gotopisa);
             }
         });
@@ -95,7 +112,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Pagoda");
                 startActivity(gotopisa);
             }
         });
@@ -104,7 +121,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Candi");
                 startActivity(gotopisa);
             }
         });
@@ -113,7 +130,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Sphinx");
                 startActivity(gotopisa);
             }
         });
@@ -122,19 +139,10 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","pisa");
+                gotopisa.putExtra("jenis_tiket","Monas");
                 startActivity(gotopisa);
             }
         });
-
-        btn_to_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gotoprofile = new Intent(HomeAct.this, ProfileAct.class);
-                startActivity(gotoprofile);
-            }
-        });
-
     }
 
     public void getUsernameLocal(){

@@ -8,11 +8,10 @@
     tools:context=".DetailTiket">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/header_ticket_detail"
         android:layout_width="match_parent"
         android:layout_height="210dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/bgheader_pisa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/mregular"
-        android:text="Menara Pisa"
         android:textColor="#FFF"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/mlight"
-        android:text="Pisa, Italia"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="18sp"
@@ -111,7 +108,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mregular"
-                    android:text="4 Tempat Foto Terbaik"
                     android:textColor="@color/blackPrimary"
                     android:textSize="16sp" />
 
@@ -151,7 +147,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mregular"
-                    android:text="Tersedia WiFi"
                     android:textColor="@color/blackPrimary"
                     android:textSize="16sp" />
 
@@ -191,7 +186,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mregular"
-                    android:text="13 Acara Festival"
                     android:textColor="@color/blackPrimary"
                     android:textSize="16sp" />
 
@@ -215,7 +209,6 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/mlight"
             android:lineSpacingExtra="8dp"
-            android:text="Mengetahui tentang sejarah Menara Pisa sejak Tahun 1173, ketika pembangunan dimulai"
             android:textColor="@color/grayPrimary"
             android:textSize="16sp" />
 
