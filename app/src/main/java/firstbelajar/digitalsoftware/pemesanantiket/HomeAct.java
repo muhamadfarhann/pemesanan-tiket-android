@@ -103,7 +103,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotopisa = new Intent(HomeAct.this, DetailTiket.class);
-                gotopisa.putExtra("jenis_tiket","Torri");
+                gotopisa.putExtra("jenis_tiket","Torrs");
                 startActivity(gotopisa);
             }
         });
